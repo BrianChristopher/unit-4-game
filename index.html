@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Working Code</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body class="bg-secondary">
+
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
+            Crystals
+        </a>
+    </nav>
+
+    <div class="container p-3">
+        <div class="card">
+            <h5 class="card-header">Instructions</h5>
+            <div class="card-body">
+                <h5 class="card-title">Click on a crystal to add its point to your score. Match your score to the
+                    computer's score.</h5>
+                <p class="card-text">Computer's Score:</p>
+                <p class="card-text">Your score:</p>
+                <p class="card-text">Wins:</p>
+                <p class="card-text">Losses:</p>
+                <a href="#" class="btn btn-dark">New Game</a>
+                <a href="#" class="btn btn-dark">Reset</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" id="card1">
+                    <img src="https://picsum.photos/600" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="card2">
+                    <img src="https://picsum.photos/601" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="card3">
+                    <img src="https://picsum.photos/602" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="card4">
+                    <img src="https://picsum.photos/603" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        console.log("This script is working.")
+
+        //GLOBAL VARIABLES
+        var computerScore = 0;
+        var userScore = 0;
+        var winCount = 0;
+        var lossCount = 0;
+
+        //Crystal Objects
+        var crystal1 = {
+            name: "The First Crystal",
+            value: 0,
+            imageSource: "assets/images/193-300x200-grayscale.jpg"
+        }
+
+        var crystal2 = {
+            name: "The Second Crystal",
+            value: 0,
+            imageSource: "assets/images/197-300x200-grayscale.jpg"
+        }
+
+        var crystal3 = {
+            name: "The Third Crystal",
+            value: 0,
+            imageSource: "assets/images/277-300x200-grayscale.jpg"
+        }
+
+        var crystal4 = {
+            name: "The Fourth Crystal",
+            value: 0,
+            imageSource: "assets/images/290-300x200-grayscale.jpg"
+        }
+
+        //FUNCTIONS TO RUN GAME
+        function resetComputerScore(){
+            computerScore = 0;
+        }
+
+        function resetUserScore(){
+            userScore = 0;
+        }
+
+        function resetWinCount(){
+            winCount = 0;
+        }
+
+        function resetLossCount(){
+            lossCount = 0;
+        }
+
+        function resetGame(){
+            resetComputerScore();
+            resetUserScore();
+            resetWinCount();
+            resetLossCount();
+        }
+
+        function randomCrystalValue(){
+            randomValue = Math.floor(Math.random() * 12) + 1;  
+               // Returns a random integer from 1 to 12
+               return randomValue;
+        }
+
+        function newCrystalValues(){
+        crystal1.value = randomCrystalValue();
+        crystal2.value = randomCrystalValue();
+        crystal3.value = randomCrystalValue();
+        crystal4.value = randomCrystalValue();
+        }  //This function could be made more DRY with a loop.
+        
+
+        newCrystalValues();
+
+        console.log("counts (4)" + computerScore + userScore + winCount + lossCount);
+        console.log(crystal1.name);
+        console.log(crystal1.value);
+        console.log(crystal2.name);
+        console.log(crystal2.value);
+        console.log(crystal3.name);
+        console.log(crystal3.value);
+        console.log(crystal4.name);
+        console.log(crystal4.value);
+        console.log("--------------")
+    </script>
+
+
+</body>
+
+</html>
