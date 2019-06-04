@@ -11,27 +11,27 @@ $(document).ready(function () {
 
     //Crystal Objects
     var crystal1 = {
-        name: "The First Crystal",
+        name: "Crystal Cox",
         value: 0,
-        imageSource: './assets/images/dogs.jpg'
+        imageSource: './assets/images/CrystalCox.jpg'
     }
 
     var crystal2 = {
-        name: "The Second Crystal",
+        name: "Crystal Reed",
         value: 0,
-        imageSource: './assets/images/193-300x200-grayscale.jpg'
+        imageSource: './assets/images/CrystalReed.jpg'
     }
 
     var crystal3 = {
-        name: "The Third Crystal",
+        name: "Crystal Eastman",
         value: 0,
-        imageSource: './assets/images/197-300x200-grayscale.jpg'
+        imageSource: './assets/images/CrystalEastman2.jpeg'
     }
 
     var crystal4 = {
-        name: "The Fourth Crystal",
+        name: "Krystal Burger",
         value: 0,
-        imageSource: './assets/images/277-300x200-grayscale.jpg'
+        imageSource: './assets/images/Original-Krystal.jpg'
     }
 
     //SET UP CRYSTALS CARDS FROM CRYSTAL OBJECTS
