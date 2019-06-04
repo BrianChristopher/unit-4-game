@@ -27,14 +27,26 @@
     <div class="container p-3">
         <div class="card">
             <h5 class="card-header">Click on a Crystal to add her points to your score. Match your score to the
-                    computer's score to win.</h5>
+                computer's score to win.</h5>
             <div class="card-body">
-                <p class="card-text">Computer's Score: <span id="displayComputerScore"></span></p>
-                <p class="card-text">Your score: <span id="displayUserScore"></span></p>
-                <p class="card-text">Wins: <span id="displayWinCount"></span></p>
-                <p class="card-text">Losses: <span id="displayLossCount"></span></p>
-                <a href="#" class="btn btn-dark">New Game</a>
-                <a href="#" class="btn btn-dark">Reset</a>
+                <div class="container"></div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="card-text">Computer's Score: <span id="displayComputerScore"></span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="card-text">Your score: <span id="displayUserScore"></span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="card-text">Wins: <span id="displayWinCount"></span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="card-text">Losses: <span id="displayLossCount"></span></p>
+                    </div>
+
+                    <a class="btn btn-dark text-white m-3" id="newGameButton">New Game</a>
+                    <a class="btn btn-dark text-white m-3" id="resetGameButton">Reset</a>
+                </div>
             </div>
         </div>
     </div>
@@ -46,35 +58,40 @@
                 <div class="card" id="card1">
                     <img src="#" class="card-img-top" alt="Crystal #1." id="card1Image">
                     <div class="card-body">
-                        <p class="card-text">Crystal #1</p>
+                        <p class="card-text" id="card1Name">Crystal #1</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card" id="card2">
-                    <img src="assets/images/197-300x200-grayscale.jpg" class="card-img-top" alt="Crystal #2.">
+                    <img src="assets/images/197-300x200-grayscale.jpg" class="card-img-top" alt="Crystal #2."
+                        id="card2Image">
                     <div class="card-body">
-                        <p class="card-text">Crystal #2</p>
+                        <p class="card-text" id="card2Name">Crystal #2</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card" id="card3">
-                    <img src="assets/images/277-300x200-grayscale.jpg" class="card-img-top" alt="Crystal #3.">
+                    <img src="assets/images/277-300x200-grayscale.jpg" class="card-img-top" alt="Crystal #3."
+                        id="card3Image">
                     <div class="card-body">
-                        <p class="card-text">Crystal #3</p>
+                        <p class="card-text" id="card3Name">Crystal #3</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card" id="card4">
-                    <img src="assets/images/290-300x200-grayscale.jpg" class="card-img-top" alt="Crystal #4.">
+                    <img src="assets/images/290-300x200-grayscale.jpg" class="card-img-top" alt="Crystal #4."
+                        id="card4Image">
                     <div class="card-body">
-                        <p class="card-text">Crystal #4</p>
+                        <p class="card-text" id="card4Name">Crystal #4</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container p-3"></div>
+
     </div>
 
 
